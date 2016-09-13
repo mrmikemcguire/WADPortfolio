@@ -1,0 +1,20 @@
+#redPlanet
+    {
+    color: crimson
+    }
+
+#bluePlanet
+    {
+    color: dodgerblue
+    }
+
+#greenPlanet
+    {
+    color: limegreen
+    }
+
+.planet
+    {
+    background-color: lightgrey
+    }
+

@@ -8,12 +8,13 @@ portfolio.config(function($routeProvider)
               templateUrl : 'pages/home.html',
               controller  : 'mainController'
 			  })
-        .when('/cost', 
+        .when('/planets', 
               {
-              templateUrl : 'pages/cost.html',
-              controller  : 'costController'
+              templateUrl : 'pages/planets/planets.html',
+              controller  : 'planetController',
+              css         : 'pages/planets/planets.css'
 			  })
-            .when('/array', 
+        .when('/array', 
               {
               templateUrl : 'pages/array.html',
               controller  : 'arrayController'
@@ -27,14 +28,15 @@ portfolio.config(function($routeProvider)
 
 portfolio.controller('mainController', function($scope) 
     {
-    $scope.message = 'See what cool things Angular can do!';
+    $scope.message = 'Come see what we have learned';
 	});
 
-portfolio.controller('costController', function($scope) 
+portfolio.controller('planetController', function($scope) 
     {
-    $scope.quantity = 1;
-    $scope.price = 9.99;
-	});
+    document.getElementById("redPlanet").innerHTML = "Green Planet";
+    document.getElementById("redPlanet").className = "planet";
+    document.getElementById("redPlanet").setAttribute ("style", "color: limegreen");
+    });
 
 portfolio.controller('arrayController', function($scope)
     {
