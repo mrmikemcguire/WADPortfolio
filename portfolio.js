@@ -1,4 +1,4 @@
-var portfolio = angular.module('portfolio', ['ngRoute']);
+var portfolio = angular.module('portfolio', ['ngRoute','door3.css']);
 
 portfolio.config(function($routeProvider) 
     {
@@ -33,9 +33,7 @@ portfolio.controller('mainController', function($scope)
 
 portfolio.controller('planetController', function($scope) 
     {
-    document.getElementById("redPlanet").innerHTML = "Green Planet";
-    document.getElementById("redPlanet").className = "planet";
-    document.getElementById("redPlanet").setAttribute ("style", "color: limegreen");
+    $scope.message = 'Planets Assignment';
     });
 
 portfolio.controller('arrayController', function($scope)
