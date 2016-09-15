@@ -1,4 +1,4 @@
-var portfolio = angular.module('portfolio', ['ngRoute','door3.css']);
+var portfolio = angular.module('portfolio', ['ngRoute']);
 
 portfolio.config(function($routeProvider) 
     {
